@@ -30,39 +30,11 @@ while(True):
         ' ': 0
     }
 
-    code2 = {
-        '1835': 'A',
-        '716467': 'B',
-        '842': 'C',
-        '7167': 'D',
-        '8745412': 'E',
-        '874541': 'F',
-        '84265': 'G',
-        '7145693': 'H',
-        '852': 'I',
-        '8521': 'J',
-        '714842': 'K',
-        '712': 'L',
-        '17593': 'M',
-        '1739': 'N',
-        '5': 'O',
-        '17854': 'P',
-        '87453': 'Q',
-        '178542': 'R',
-        '8451': 'S',
-        '7982': 'T',
-        '7139': 'U',
-        '729': 'V',
-        '71539': 'W',
-        '73591': 'X',
-        '7591': 'Y',
-        '4826': 'Z',
-        '0': ' '
+   
 
 
 
-
-    }
+    
 
     print(' press 1 to encrypt the code')
     print(' press 2 to decrypt the code')
@@ -80,8 +52,8 @@ while(True):
                     print(code2[j], end='')
 
     if(x == 2):
-        data = input("Enter data to be decoded : ")
-        if (len(data) == 0):
+        data = int(input("Enter data to be decoded : "))
+        if (data == 0):
             raise ValueError('Data is empty')
         for k in range(0, len(data)):
             for j in code1:
